@@ -89,7 +89,7 @@ transition: all 0.3s ease-out;
 }
 
 .image-theme{
-    width : 200px;
-    margin: auto;
+
+    margin: 0;
 
 }
