@@ -52,7 +52,7 @@
 
 
 </head>
-<body ng-controller="themeController as themes">
+<body ng-controller="cause1Controller as cause">
 
 
 
@@ -75,23 +75,37 @@
 <div class="splash-container">
     <div class="splash">
 
-        <h1>l'argent machine</h1>
+
 
 
 
         <div class="pure-g">
 
-             <div class="pure-u-1-3"  ng-repeat="letheme in themes.lesthemes"><div class="myTheme">
-                 <div class="image-container">
-                     <img class="image-theme" ng-src="{{letheme.img}}"/>
-                 </div>
-                 <div class="title-theme">
-                     <h3>{{letheme.nom}}</h3>
-                     <p>
-                         {{letheme.description}}
-                     </p>
-                 </div>
-             </div></div>
+            <div class="pure-u-1-4"  ng-repeat="lacause1 in cause.lescause1"><div class="myCause">
+
+                <div class="hover panel" >
+                    <div class="front">
+                        <div class="pad">
+                            <div class="image-container-cause">
+                                <img class="image-theme" ng-src="{{lacause1.img}}"/>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="pad">
+                            <div class="cause-description">
+                                <span>{{lacause1.description}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <h2>{{lacause1.nom}}</h2>
+
+            </div></div>
 
         </div>
 
@@ -100,7 +114,18 @@
 
 
 
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        // set up hover panels
+        // although this can be done without JavaScript, we've attached these events
+        // because it causes the hover to be triggered when the element is tapped on a touch device
+        $('.hover').hover(function(){
+            $(this).addClass('flip');
+        },function(){
+            $(this).removeClass('flip');
+        });
+    });
+</script>
 
 
 </body>
