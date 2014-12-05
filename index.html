@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+    <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/myStyle.css">
+    <!-- Magnific Popup core JS file -->
+    <script src="popup/jquery.magnific-popup.js"></script>
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="popup/magnific-popup.css">
+
+
+
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+
+
+
+<!--[if lte IE 8]>
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+  
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  
+<!--<![endif]-->
+
+
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+
+
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/marketing.css">
+    <!--<![endif]-->
+  
+
+
+    
+
+    
+
+</head>
+<body>
+
+
+
+
+
+
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Shake your World</a>
+
+        <ul>
+            <li><a class="test-popup-link" href="http://40.media.tumblr.com/fa6d63936ad3f538264e9cd51cffc195/tumblr_nfcaolr93L1qattl2o1_1280.jpg">Organizations</a></li>
+            <li><a href="#">I need help</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+
+        <p>
+            <a href="" class="pure-button pure-button-primary">Help us</a>
+        </p>
+        <p class="splash-subhead">
+
+            By contributing to Shake your world you will help organisations around the world to suck dicks and pick up hot chicks.
+        </p>
+
+
+    </div>
+</div>
+
+
+
+<div class="footer l-box is-center">
+        View the source of this layout to learn more. Made with love by the YUI Team.
+</div>
+
+
+
+
+
+
+
+
+<script>
+    $('.image-popup-no-margins').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        closeBtnInside: false,
+        fixedContentPos: true,
+        mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+        image: {
+            verticalFit: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 300 // don't foget to change the duration also in CSS
+        }
+    });
+
+    $('.test-popup-link').magnificPopup({
+        type: 'image'
+        // other options
+
+    });
+</script>
+
+
+
+
+</body>
+</html>
