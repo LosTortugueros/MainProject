@@ -98,16 +98,22 @@ transition: all 0.3s ease-out;
     margin: 0;
 
 }
+
+.image-container img{
+    width : 450px;
+}
 .myCause .cause-description{
     background-color: rgba(255,255,255,0.7);
     color : #333333;
     width : 200px;
-    height : 100%;
+    height : auto;
     margin : auto;
     position: relative;
 
 }
+.myCause{
 
+}
 
 .myCause .image-container-cause{
     width :200px;
